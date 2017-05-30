@@ -1,0 +1,15 @@
+{
+  "name": "mmacademy/module-greetings",
+  "description": "Allows customers to greet each other by sending greetings via form on every page",
+  "require": {
+    "magento/framework": "100.1.*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "MMAcademy\\Greetings\\": ""
+    }
+  }
+}
