@@ -1,0 +1,16 @@
+<?php /** @var \MMAcademy\Greetings\Block\Form $block */ ?>
+<form action="<?= $block->getFormUrl() ?>" method="post">
+    <div>
+        <label for="greetings-name"><?= __('Name') ?></label>
+        <input id="greetings-name" name="name"/>
+    </div>
+
+    <div>
+        <label for="greetings-msg"><?= __('Message') ?></label>
+        <textarea id="greetings-msg" name="msg"></textarea>
+    </div>
+
+    <button class="action button">
+        <span><?= __('Send') ?></span>
+    </button>
+</form>

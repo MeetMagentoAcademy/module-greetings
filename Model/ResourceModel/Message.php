@@ -14,6 +14,6 @@ class Message extends AbstractDb
      */
     protected function _construct()
     {
-        // TODO: Implement _construct() method.
+        $this->_init('mmacademy_message', 'message_id');
     }
 }

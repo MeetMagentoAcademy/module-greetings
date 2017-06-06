@@ -6,5 +6,10 @@ use Magento\Framework\View\Element\Template;
 
 class Form extends Template
 {
-// TODO
+    protected $_template = 'form.phtml';
+
+    public function getFormUrl()
+    {
+        return $this->getUrl('greetings/message/save');
+    }
 }

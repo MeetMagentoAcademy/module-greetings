@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference
+            for="MMAcademy\Greetings\Api\GreetingsInterface"
+            type="MMAcademy\Greetings\Model\GreetingsManager"/>
+    <preference
+            for="MMAcademy\Greetings\Api\Data\MessageInterface"
+            type="MMAcademy\Greetings\Model\Message" />
+</config>

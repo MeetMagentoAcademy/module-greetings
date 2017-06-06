@@ -1,0 +1,10 @@
+<?php /** @var \MMAcademy\Greetings\Block\Messages $block */ ?>
+<div>
+    <?php foreach($block->getCustomerMessages() as $message): /** @var \MMAcademy\Greetings\Api\Data\MessageInterface $message */?>
+        <div>
+            <span><?= $message->getAuthor() ?></span>
+            <span><?= $message->getValue() ?></span>
+            <span><?= $block->formatDate($message->getCreationTime()) ?></span>
+        </div>
+    <?php endforeach ?>
+</div>
